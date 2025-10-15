@@ -1,0 +1,16 @@
+[project]
+name = "pyvt"
+version = "0.0.1a"
+description = "Python package for simulation of PVT experiments"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Federico E. Benelli", email = "federico.benelli@unc.edu.ar"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Linux",
+]
+dependencies = ["yaeos"]
