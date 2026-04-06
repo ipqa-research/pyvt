@@ -1,6 +1,6 @@
 [project]
 name = "pyvt"
-version = "0.0.1a"
+version = "0.0.2a"
 description = "Python package for simulation of PVT experiments"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -13,4 +13,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: Linux",
 ]
-dependencies = ["yaeos"]
+dependencies = ["yaeos", "streamlit", "plotly"]
+
+[tool.setuptools]
+packages = ["pyvt"]
