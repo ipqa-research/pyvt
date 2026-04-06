@@ -60,9 +60,7 @@ def cvd(model: ArModel, z: np.ndarray, sat: dict) -> dict:
         # the total volume constant and equal to the volume of the oil at
         # saturation conditions.
         # V = n_oil * step["Vx"] + n_gas * step["Vy"]
-        nout = (n_oil * step["Vx"] + n_gas * step["Vy"] - sat["Vx"]) / step[
-            "Vy"
-        ]
+        nout = (n_oil * step["Vx"] + n_gas * step["Vy"] - sat["Vy"]) / step["Vy"]
 
         # Remaining gas in the cell.
         n_gas = n_gas - nout
